@@ -1,0 +1,83 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fighters</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>SHADOW FIGHTERS</h1>
+
+        <div class="hud">
+            <div class="health-container">
+                <div class="name">PLAYER 1</div>
+                <div class="health-bg">
+                    <div id="player1Health" class="health player1-health"></div>
+                </div>
+            </div>
+
+            <div id="timer">60</div>
+
+            <div class="health-container">
+                <div class="name">PLAYER 2</div>
+                <div class="health-bg">
+                    <div id="player2Health" class="health player2-health"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-box">
+
+            <canvas id="gameCanvas" width="1000" height="550"></canvas>
+
+            <div id="startScreen" class="screen">
+                <h2>SHADOW FIGHTERS</h2>
+                <p>Ready to fight?</p>
+                <button id="startButton">START FIGHT</button>
+            </div>
+
+            <div id="gameOverScreen" class="screen hidden">
+                <h2 id="winnerText">PLAYER 1 WINS!</h2>
+                <button id="restartButton">PLAY AGAIN</button>
+            </div>
+
+        </div>
+
+        <div class="controls">
+
+            <div>
+                <h3>PLAYER 1</h3>
+                <p>A / D → Move</p>
+                <p>W → Jump</p>
+                <p>F → Punch</p>
+                <p>G → Kick</p>
+                <p>H → Special</p>
+                <p>S → Block</p>
+            </div>
+
+            <div>
+                <h3>PLAYER 2</h3>
+                <p>← / → → Move</p>
+                <p>↑ → Jump</p>
+                <p>J → Punch</p>
+                <p>K → Kick</p>
+                <p>L → Special</p>
+                <p>↓ → Block</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
